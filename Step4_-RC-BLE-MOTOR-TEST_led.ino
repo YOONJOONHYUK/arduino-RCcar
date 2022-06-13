@@ -64,7 +64,7 @@ void Forward(){
 
 void Right(){
     //  오른쪽
-    digitalWrite(9, HIGH);
+    digitalWrite(9, HIGH);  //우회전을 할때 오른쪽 불이 
     analogWrite(enablelPin, 0);
     analogWrite(enable2Pin, 150);
     digitalWrite(motor1PinA, LOW);
@@ -78,7 +78,7 @@ void Right(){
     
 void Left(){
     //  왼쪽
-    digitalWrite(8, HIGH);
+    digitalWrite(8, HIGH);  //좌회전을 할때 왼쪽 불이 켜진다
     analogWrite(enablelPin, 150);
     analogWrite(enable2Pin, 0);
     digitalWrite(motor1PinA, LOW); 
@@ -90,7 +90,7 @@ void Left(){
 
 void Stop(){
     //정지
-    digitalWrite(9, LOW);
+    digitalWrite(9, LOW);  //정지일때 불이 안 들어옴
     digitalWrite(8, LOW); 
     digitalWrite(motor1PinA, LOW);
     digitalWrite(motor1PinB, LOW);
