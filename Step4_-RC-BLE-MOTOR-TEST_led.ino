@@ -90,7 +90,7 @@ void Left(){
 
 void Stop(){
     //정지
-    digitalWrite(9, LOW);   //정지할때 둘다 
+    digitalWrite(9, LOW);   //정지할때 둘다 꺼짐
     digitalWrite(8, LOW); 
     digitalWrite(motor1PinA, LOW);
     digitalWrite(motor1PinB, LOW);
