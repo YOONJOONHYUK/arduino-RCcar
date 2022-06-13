@@ -21,3 +21,8 @@
 ![화면 캡처 2022-06-13 053805](https://user-images.githubusercontent.com/102521625/173252732-2882880a-615e-4579-a2e9-bbd2cefa506b.jpg)
 
 
+### 자동차 led회로도
+
+![화면 캡처 2022-06-13 223712](https://user-images.githubusercontent.com/102521625/173366218-481ad9df-800f-48f6-966c-f6a4124fc0c5.jpg)
+
+(좌회전을 하면 좌측 led가 켜지고 우회전을 하면 우측 led가 켜진다.)
