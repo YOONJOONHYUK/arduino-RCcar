@@ -21,9 +21,6 @@ char in;
         pinMode(enablelPin, OUTPUT);
         pinMode(enable2Pin, OUTPUT);
 
-        pinMode(9, OUTPUT);
-        pinMode(8, OUTPUT);
-
         // set enablePin high so that motor can turn on:
        analogWrite(enablelPin, 150);
        analogWrite(enable2Pin, 150);
@@ -64,21 +61,17 @@ void Forward(){
 
 void Right(){
     //  오른쪽
-    digitalWrite(9, HIGH);
     analogWrite(enablelPin, 0);
     analogWrite(enable2Pin, 150);
     digitalWrite(motor1PinA, LOW);
     digitalWrite(motor1PinB, LOW);
     digitalWrite(motor2PinA, LOW);
     digitalWrite(motor2PinB, HIGH);
-    
-    
 }
 
     
 void Left(){
     //  왼쪽
-    digitalWrite(8, HIGH);
     analogWrite(enablelPin, 150);
     analogWrite(enable2Pin, 0);
     digitalWrite(motor1PinA, LOW); 
@@ -90,8 +83,6 @@ void Left(){
 
 void Stop(){
     //정지
-    digitalWrite(9, LOW);
-    digitalWrite(8, LOW); 
     digitalWrite(motor1PinA, LOW);
     digitalWrite(motor1PinB, LOW);
     digitalWrite(motor2PinA, LOW);
